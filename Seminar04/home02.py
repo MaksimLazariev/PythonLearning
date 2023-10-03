@@ -1,0 +1,19 @@
+"""Задача 02"""
+
+
+# Напишите функцию, принимающую на вход только ключевые параметры и
+# возвращающую словарь, где ключ — значение переданного аргумента,
+# а значение — имя аргумента. Если ключ не хешируем, используйте его
+# строковое представление.
+# reverse_kwargs(rev=True, acc="YES", stroka=4) ->
+# {True: "rev", "YES": 'acc', 4: "stroka"}
+
+def reverse_kwargs(**kwargs: str | int | bool) -> dict[str]:
+    """"Функция принимает на вход ключевые параметры и возвращает словарь"""
+    reverse_dict = {}
+    for key, value in kwargs.items():
+        reverse_dict[value] = key
+    return reverse_dict
+
+
+print(reverse_kwargs(rev=True, acc="YES", stroka=4))
