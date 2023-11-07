@@ -1,0 +1,2 @@
+ERROR:__main__:Возникла ошибка invalid literal for int() with base 10: 'str' в функции __init__ с аргументами (<__main__.Circle object at 0x000002A3A0148190>, 'str') и {}
+ERROR:__main__:Возникла ошибка 'Circle' object has no attribute 'radius' в функции parser с аргументами () и {}

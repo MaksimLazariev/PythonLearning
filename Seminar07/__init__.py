@@ -1,0 +1,1 @@
+__all__ = ['rand_name', 'rand_num', 'task03', 'task04', 'task05', 'home01']
